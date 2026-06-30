@@ -1,0 +1,67 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final languageProvider = StateProvider<String>((ref) => 'fr');
+
+class AppStrings {
+  static String get(String key, String lang) {
+    return _strings[key]?[lang] ?? _strings[key]?['fr'] ?? key;
+  }
+
+  static const _strings = {
+    'accueil': {'fr': 'Accueil', 'en': 'Home'},
+    'objectifs': {'fr': 'Mes objectifs', 'en': 'My Goals'},
+    'victoires': {'fr': 'Victoires', 'en': 'Victories'},
+    'stats': {'fr': 'Statistiques', 'en': 'Statistics'},
+    'parametres': {'fr': 'Paramètres', 'en': 'Settings'},
+    'bonjour': {'fr': 'Bonjour 👋', 'en': 'Hello 👋'},
+    'objectifs_actifs': {'fr': 'objectif(s) actif(s)', 'en': 'active goal(s)'},
+    'streak': {'fr': 'Streak', 'en': 'Streak'},
+    'reussite': {'fr': 'Réussite', 'en': 'Success'},
+    'points': {'fr': 'Points', 'en': 'Points'},
+    'objectifs_du_jour': {'fr': 'Objectifs du jour', 'en': "Today's goals"},
+    'ajouter_objectif': {'fr': 'Ajouter un objectif', 'en': 'Add a goal'},
+    'nouvel_objectif': {'fr': 'Nouvel objectif', 'en': 'New goal'},
+    'titre': {'fr': "Titre de l'objectif", 'en': 'Goal title'},
+    'description': {'fr': 'Description (optionnel)', 'en': 'Description (optional)'},
+    'categorie': {'fr': 'Catégorie', 'en': 'Category'},
+    'micro_etapes': {'fr': 'Micro-étapes', 'en': 'Micro-steps'},
+    'ajouter_etape': {'fr': 'Ajouter une étape…', 'en': 'Add a step…'},
+    'annuler': {'fr': 'Annuler', 'en': 'Cancel'},
+    'creer': {'fr': 'Créer', 'en': 'Create'},
+    'aucun_objectif': {'fr': 'Aucun objectif. Ajoutez-en un !', 'en': 'No goals yet. Add one!'},
+    'etapes': {'fr': 'étapes', 'en': 'steps'},
+    'heure_debut': {'fr': 'Heure de début', 'en': 'Start time'},
+    'heure_fin': {'fr': 'Heure de fin', 'en': 'End time'},
+    'duree': {'fr': 'Durée estimée', 'en': 'Estimated duration'},
+    'rappel': {'fr': 'Rappel activé', 'en': 'Reminder on'},
+    'compte': {'fr': 'Compte', 'en': 'Account'},
+    'preferences': {'fr': 'Préférences', 'en': 'Preferences'},
+    'informations': {'fr': 'Informations', 'en': 'Information'},
+    'connecter_email': {'fr': 'Connecter un email', 'en': 'Connect an email'},
+    'sauvegarder': {'fr': 'Sauvegarder', 'en': 'Backup'},
+    'restaurer': {'fr': 'Restaurer', 'en': 'Restore'},
+    'notifications': {'fr': 'Notifications', 'en': 'Notifications'},
+    'langue': {'fr': 'Langue', 'en': 'Language'},
+    'a_propos': {'fr': 'À propos', 'en': 'About'},
+    'hors_ligne': {'fr': 'Hors ligne', 'en': 'Offline'},
+    'utilisateur': {'fr': 'Utilisateur', 'en': 'User'},
+    'mode_local': {'fr': 'Mode local · hors ligne', 'en': 'Local mode · offline'},
+    'sauvegarde_titre': {'fr': 'Sauvegarde & Restauration', 'en': 'Backup & Restore'},
+    'sauvegarde_desc': {'fr': 'Connectez votre email pour sauvegarder et restaurer vos données. Internet requis uniquement pour cette opération.', 'en': 'Connect your email to backup and restore your data. Internet required only for this operation.'},
+    'coach_titre': {'fr': 'Coach Aria', 'en': 'Coach Aria'},
+    'coach_role': {'fr': 'Votre coach IA personnel', 'en': 'Your personal AI coach'},
+    'micro_victoires': {'fr': 'Micro-victoires', 'en': 'Micro-victories'},
+    'aujourdhui': {'fr': "Aujourd'hui", 'en': 'Today'},
+    'jours_streak': {'fr': 'jours de streak', 'en': 'day streak'},
+    'record': {'fr': 'Record', 'en': 'Record'},
+    'fermer': {'fr': 'Fermer', 'en': 'Close'},
+    'sauvegarder_btn': {'fr': 'Sauvegarder', 'en': 'Save'},
+    'rappel_matin': {'fr': 'Rappel du matin', 'en': 'Morning reminder'},
+    'rappel_soir': {'fr': 'Rappel du soir', 'en': 'Evening reminder'},
+    'version': {'fr': 'Goal Tracker v1.0.0', 'en': 'Goal Tracker v1.0.0'},
+    'langue_fr': {'fr': 'Français', 'en': 'French'},
+    'langue_en': {'fr': 'Anglais', 'en': 'English'},
+    'confirmer': {'fr': 'Confirmer', 'en': 'Confirm'},
+    'min': {'fr': 'min', 'en': 'min'},
+  };
+}

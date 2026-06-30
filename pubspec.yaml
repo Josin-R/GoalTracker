@@ -1,0 +1,46 @@
+name: goal_tracker
+description: Goal Tracker - Suivez vos objectifs avec micro-victoires et Coach IA
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  fl_chart: ^0.68.0
+  lottie: ^3.0.0
+  flutter_riverpod: ^2.5.1
+  shared_preferences: ^2.2.3
+  google_fonts: ^6.2.1
+  animate_do: ^3.3.4
+  intl: ^0.19.0
+  uuid: ^4.4.0
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.11
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/LogoGT.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/LogoGT.png"

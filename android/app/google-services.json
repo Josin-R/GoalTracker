@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "67811140524",
+    "project_id": "goal-tracker-ec117",
+    "storage_bucket": "goal-tracker-ec117.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67811140524:android:75b19d6faea211a4a99009",
+        "android_client_info": {
+          "package_name": "com.example.goal_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx01WaMankM-i2ZQdWYG5_FFt20QBzgt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
