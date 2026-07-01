@@ -1,4 +1,3 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 part of 'goal.dart';
 
 class GoalAdapter extends TypeAdapter<Goal> {
